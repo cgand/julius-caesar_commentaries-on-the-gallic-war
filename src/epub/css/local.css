@@ -1,9 +1,42 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+
 span[epub|type~="subtitle"]{
 	display: block;
 	font-weight: normal;
 }
+
 abbr.era{
 	font-variant: all-small-caps;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+.signature{
+	font-variant: small-caps;
+}
+
+table{
+	margin: 1em auto;
+	font-variant-numeric: tabular-nums;
+}
+
+table tr td{
+	padding: 0 .5em;
+	vertical-align: top;
+}
+
+table tr.total td{
+	border-top: 1px solid;
+}
+
+table td:first-child{
+	max-width: 75%;
+}
+
+table td:nth-child(2){
+	text-align: right;
 }
